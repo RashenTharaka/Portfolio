@@ -1,0 +1,228 @@
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 2.5rem var(--gutter) 1.5rem;
+  background: #060817;
+  overflow: hidden;
+}
+
+/* =========================================================
+   FOOTER — SINGLE ROW LAYOUT
+========================================================= */
+
+.footer__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Flatten bottom wrapper so its children
+   participate in the footer flex layout */
+
+.footer__bottom {
+  display: contents;
+}
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer__copyright {
+  order: 1;
+  flex: 0 1 auto;
+  margin: 0;
+  color: var(--color-muted-on-dark);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   SOCIAL LINKS
+========================================================= */
+
+.footer__socials {
+  order: 2;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0;
+}
+
+.footer__social-link {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem;
+  color: #FFFFFF;
+  background: transparent;
+  border: 1px solid rgba(51, 174, 233, 0.508);
+  border-radius: 10px;
+  text-decoration: none;
+  overflow: visible;
+  transition:
+    color 250ms ease,
+    background 250ms ease,
+    border-color 250ms ease,
+    box-shadow 250ms ease,
+    transform 150ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.footer__social-link svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+/* =========================================================
+   BRAND COLOURED HOVER EFFECTS
+========================================================= */
+
+/* Facebook */
+
+.footer__social-link--facebook:hover {
+  transform: scale(1.05);
+  background: #0a66c275;
+  border-color: #54DAEB;
+  box-shadow: 0 0 10px rgba(10, 102, 194, 0.4);
+}
+
+/* LinkedIn */
+
+.footer__social-link--linkedin:hover {
+  transform: scale(1.05);
+  background: #0a66c275;
+  border-color: #54DAEB;
+  box-shadow: 0 0 10px rgba(10, 102, 194, 0.4);
+}
+
+/* Instagram */
+
+.footer__social-link--instagram:hover {
+  transform: scale(1.05);
+  background: linear-gradient(
+    135deg,
+    #FFB900,
+    #FF3040,
+    #FF00A6,
+    #7638FA
+  );
+  border-color: #F461C0;
+  box-shadow: 0 0 10px rgba(255, 48, 128, 0.4);
+}
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+
+.footer__back-to-top {
+  order: 3;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--color-text-on-dark);
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.footer__back-to-top span {
+  color: var(--color-text-on-dark);
+  font-size: 1.2rem;
+  transition: transform var(--transition);
+}
+
+.footer__back-to-top:hover {
+  color: #54A0FD;
+}
+
+.footer__back-to-top:hover span {
+  color: #54A0FD;
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+.footer__social-link:focus-visible,
+.footer__back-to-top:focus-visible {
+  outline: 2px solid var(--color-accent-cyan);
+  outline-offset: 4px;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 700px) {
+  .footer {
+    padding-top: 2rem;
+  }
+
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 1.5rem;
+  }
+
+  .footer__socials {
+    order: 1;
+    flex-basis: 100%;
+  }
+
+  .footer__copyright {
+    order: 2;
+    white-space: normal;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+
+  .footer__back-to-top {
+    order: 3;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer__social-link {
+    padding: 0.9rem;
+  }
+
+  .footer__social-link svg {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .footer__social-link,
+  .footer__back-to-top,
+  .footer__back-to-top span {
+    transition: none;
+  }
+}

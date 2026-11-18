@@ -1,0 +1,374 @@
+
+/* =========================================================
+   JOURNEY SECTION — EDUCATION & EXPERIENCE
+========================================================= */
+
+
+/* =========================================================
+   1. SECTION SPACING
+========================================================= */
+
+#journey {
+  padding-top: 0;
+}
+
+.journey .section__inner {
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
+}
+
+
+/* =========================================================
+   2. SECTION HEADING
+========================================================= */
+
+.journey__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 2.8rem;
+  text-align: left;
+}
+
+.journey__eyebrow {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  color: rgb(51, 174, 233);
+  /* filter: brightness(1.3); */
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+}
+
+.journey__title {
+  margin: 0;
+  color: var(--color-text-on-dark);
+  font-size: clamp(2.5rem, 5vw, 3.99rem);
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 1.05;
+  text-align: left;
+}
+
+
+/* =========================================================
+   3. JOURNEY GRID
+========================================================= */
+
+
+.journey__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.91fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: stretch;
+  width: 100%;
+  min-width: 0;
+}
+
+.journey__column {
+  min-width: 0;
+  
+}
+
+.journey__column-title {
+  margin: 0 0 1.5rem;
+  color: rgb(51, 174, 233);
+  /* filter: brightness(1.3); */
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   4. OPEN TIMELINE
+========================================================= */
+
+.journey__timeline {
+  position: relative;
+  display: grid;
+  gap: 2.5rem;
+  padding-left: 1.25rem;
+}
+
+.journey__timeline::before {
+  position: absolute;
+  top: 1rem;
+  bottom: 1em;
+  left: 0.25rem;
+  width: 1px;
+  background: rgba(91, 48, 118, 0.548);
+  background: rgba(51, 104, 184, 0.548);
+  content: "";
+}
+
+
+
+/* =========================================================
+   5. TIMELINE ENTRIES
+========================================================= */
+
+.journey__card {
+  position: relative;
+  min-width: 0;
+  padding: 0 0 0.5rem;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: none;
+}
+
+
+/* Timeline marker */
+
+.journey__card::before {
+  position: absolute;
+  top: 0.4rem;
+  left: -1.3rem;
+  width: 10.5px;
+  height: 10.5px;
+  border: 2px solid rgba(51, 104, 184,  0.548);
+  border-radius: 50%;
+  /* background: rgb(130, 82, 159); */
+  background: rgba(51, 104, 184,  0.548);
+  box-shadow: 0 0 5px rgba(51, 104, 184,  0.293);
+  content: "";
+}
+
+
+/* Keep timeline entries visually open */
+
+.journey__card:hover {
+  transform: none;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+
+
+/* =========================================================
+   6. TIMELINE TYPOGRAPHY
+========================================================= */
+
+.journey__card-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.journey__date {
+  flex: 0 0 auto;
+  margin: 0  0rem 0.4rem auto;
+  color: #3368B8;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.journey__card-title {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0 0 0.4rem;
+  color: var(--color-text-on-dark);
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.journey__institution {
+  margin: 0;
+  color: var(--color-muted-on-dark);
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  line-height: 1.5;
+}
+
+.journey__description {
+  margin: 0.65rem 0 0;
+  color: rgba(91, 48, 118, 0.548);
+  color: rgba(51, 104, 184, 0.548);
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.journey__points {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0.9rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--color-muted-on-dark);
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.journey__points li::marker {
+  color: rgba(91, 48, 118, 0.548);
+}
+
+
+/* Bottom divider marking the end of Journey */
+.journey::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: max(
+    clamp(1.25rem, 5vw, 5rem),
+    calc((100% - 1200px) / 2)
+  );
+  right: max(
+    clamp(1.25rem, 5vw, 5rem),
+    calc((100% - 1200px) / 2)
+  );
+  height: 1px;
+  background: rgba(168, 163, 155, 0.18);
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   7. RESPONSIVE LAYOUT
+========================================================= */
+
+
+/* Large desktop: 1440px and above */
+
+@media (min-width: 1440px) {
+
+  .journey__timeline {
+    gap: 2.75rem;
+  }
+
+}
+
+
+/* Laptop: 1025px–1439px */
+
+@media (min-width: 1025px) and (max-width: 1439px) {
+
+  .journey .section__inner {
+    padding-top: 3.75rem;
+    padding-bottom: 0rem;
+  }
+
+  .journey__timeline {
+    gap: 2.25rem;
+  }
+
+}
+
+
+/* Tablet: 768px–1024px */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .journey .section__inner {
+    padding-top: 3.75rem;
+    padding-bottom: 0.15rem;
+  }
+
+  .journey__intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .journey__title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+  }
+
+  .journey__grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.91fr);
+    gap: clamp(3rem, 7vw, 7rem);
+  }
+
+  .journey__timeline {
+    gap: 2rem;
+  }
+
+}
+
+
+/* Large mobile: 601px–767px */
+
+@media (min-width: 601px) and (max-width: 767px) {
+
+  .journey .section__inner {
+    padding-top: 3.75rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .journey__intro {
+    margin-bottom: 2.25rem;
+  }
+
+  .journey__title {
+    font-size: clamp(2.5rem, 5vw, 3rem);
+  }
+
+  .journey__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .journey__timeline {
+    gap: 2rem;
+  }
+
+}
+
+
+/* Mobile: 600px and below */
+
+@media (max-width: 600px) {
+
+  .journey .section__inner {
+    padding-top: 3.1rem;
+    padding-bottom: 0rem;
+  }
+
+  .journey__intro {
+    margin-bottom: 2rem;
+  }
+
+  .journey__title {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+  }
+
+  .journey__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .journey__column-title {
+    margin-bottom: 1.5rem;
+  }
+
+  .journey__timeline {
+    gap: 2rem;
+  }
+
+}
+
+
+/* =========================================================
+   8. REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .journey__card {
+    transition: none;
+  }
+
+}
