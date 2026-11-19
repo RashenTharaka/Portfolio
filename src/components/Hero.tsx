@@ -92,7 +92,7 @@ export default function Hero() {
             {/* Hidden completely until a real CV path is set in portfolio.ts */}
             {cvPath && (
               <a
-                className="hero__cta hero__cta--secondary"
+                className="hero__cta hero__cta--primarybtn"
                 href={cvPath}
                 download
               >
