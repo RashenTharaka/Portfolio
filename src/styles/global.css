@@ -607,14 +607,12 @@ a:hover {
 .navbar--scrolled {
   background: rgba(13, 17, 26, 0.45);
   backdrop-filter: blur(18px) !important;
-  -webkit-backdrop-filter: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .navbar--open {
   background: rgba(13, 17, 26, 0.45);
   backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
