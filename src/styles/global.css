@@ -450,19 +450,7 @@ a:hover {
   transition: var(--transition);
 }
 
-.navbar--scrolled {
-  background: rgba(13, 17, 26, 0.45);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
 
-.navbar--open {
-  background: rgba(13, 17, 26, 0.45);
-  backdrop-filter: blur(18px) saturate(140%);
-  -webkit-backdrop-filter: blur(18px) saturate(140%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
 
 .navbar__inner {
   display: flex;
@@ -614,6 +602,19 @@ a:hover {
   color: var(--color-accent);
 }
 
+.navbar--scrolled {
+  background: rgba(13, 17, 26, 0.45);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.navbar--open {
+  background: rgba(13, 17, 26, 0.45);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
 
 
 
