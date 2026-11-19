@@ -12,7 +12,7 @@ const education = [
   {
     date: "Dec 2019 – Aug 2025",
     title: "Higher Diploma in Information Technology",
-    subtitle: "SLIIT City University, Colombo, Sri Lanka",
+    subtitle: "SLIIT City Uni, Colombo, Sri Lanka",
   },
   {
     date: "Jan 2017 – Aug 2019",

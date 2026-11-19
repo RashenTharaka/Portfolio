@@ -113,7 +113,7 @@ export const profile: Profile = {
   aboutHeading: "Passionate About Building Solutions",
   aboutText:
     "Computer Science graduate with First Class Honours from the University of Bedfordshire. Interested in building practical software that solves real-world problems, with a focus on thoughtful engineering, continuous learning, and useful user experiences.",
-  cvPath: null,
+  cvPath: "/Tharaka_Rusiru_CV.pdf",
   heroPortrait: {
     src: "/images/hero-portrait.png",
     alt: "Portrait of Tharaka Rusiru",

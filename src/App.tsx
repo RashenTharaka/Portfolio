@@ -36,10 +36,9 @@ function App() {
           <Skills />
           <Journey />
           <Contact />
-          <Footer />
-
           {/* Add your Projects, Contact and Footer components here. */}
         </main>
+        <Footer />
       </div>
     </>
   );
