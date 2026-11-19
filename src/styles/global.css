@@ -401,8 +401,8 @@ a:hover {
   pointer-events: none;
   background: radial-gradient(
     ellipse 40% 45% at 100% 100%,
-    rgba(50, 152, 195, 0.373),
-    transparent 95%
+    rgba(50, 152, 195, 0.479),
+    transparent 110%
   );
 
 
@@ -419,12 +419,12 @@ a:hover {
   inset: 0;
   pointer-events: none;
   background: radial-gradient(
-    ellipse 40% 50% at 0% 0%,
+    ellipse 70% 50% at 0% 0%,
     rgba(211, 54, 254, 0.31),
-    transparent 100%
+    transparent 110%
   ),
     radial-gradient(
-      ellipse 35% 35% at 76% -12%,
+      ellipse 65% 65% at 80% -12%,
       rgba(192, 15, 89, 0.278),
       transparent 85%
     );
