@@ -1730,7 +1730,6 @@ a:hover {
       rgba(18, 31, 52, 0.88)
     );
     backdrop-filter: blur(18px) ;
-    -webkit-backdrop-filter: blur(18px) ;
     border-bottom: 1px solid rgba(100, 216, 212, 0.18);
     box-shadow:
       0 12px 30px rgba(0, 0, 0, 0.25),

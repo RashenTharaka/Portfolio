@@ -241,7 +241,7 @@
   font-weight: 200;
   letter-spacing: 0.04em;
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(10px);
+
 }
 .project-card__number {
   font-variant-numeric: tabular-nums;
@@ -729,7 +729,6 @@
   border: 1px solid rgba(51, 174, 233, 0.508);
   border-radius: 10px;
   backdrop-filter: blur(12px) saturate(180%);
-  -webkit-backdrop-filter: blur(12px) saturate(180%);
   background: transparent;
   color: #ffffff;
   font-family: inherit;
@@ -779,7 +778,6 @@
   padding: 2rem;
   background: rgba(0, 0, 0, 0.88);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .research-video-modal__content {
